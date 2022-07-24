@@ -1,0 +1,248 @@
+<html>
+<head>
+	<style>
+	body {
+		margin: 0;
+		font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
+
+	.b{
+		text-align:center;
+
+	}
+
+	.myButton {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #333338));
+	background:-moz-linear-gradient(top, #000000 5%, #333338 100%);
+	background:-webkit-linear-gradient(top, #000000 5%, #333338 100%);
+	background:-o-linear-gradient(top, #000000 5%, #333338 100%);
+	background:-ms-linear-gradient(top, #000000 5%, #333338 100%);
+	background:linear-gradient(to bottom, #000000 5%, #333338 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#333338',GradientType=0);
+	background-color:#000000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:2px solid #292c2e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size:27px;
+	padding:6px 29px;
+	text-decoration:none;
+	width: 400px;
+	height: 50 px;
+  text-align: center;
+  margin: 40px 100px 20px 100px;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #333338), color-stop(1, #000000));
+	background:-moz-linear-gradient(top, #333338 5%, #000000 100%);
+	background:-webkit-linear-gradient(top, #333338 5%, #000000 100%);
+	background:-o-linear-gradient(top, #333338 5%, #000000 100%);
+	background:-ms-linear-gradient(top, #333338 5%, #000000 100%);
+	background:linear-gradient(to bottom, #333338 5%, #000000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#333338', endColorstr='#000000',GradientType=0);
+	background-color:#333338;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+ input{
+	padding:5px;
+	width:400px;
+	height:50px;
+	background-color:rgb(19,26,45);
+	border:2px solid black;
+	border-radius: 5px;
+	color:white;
+	opacity: 2;
+	margin: 20px 10px 20px 10px;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #333338));
+	background:-moz-linear-gradient(top, #000000 5%, #333338 100%);
+	background:-webkit-linear-gradient(top, #000000 5%, #333338 100%);
+	background:-o-linear-gradient(top, #000000 5%, #333338 100%);
+	background:-ms-linear-gradient(top, #000000 5%, #333338 100%);
+	background:linear-gradient(to bottom, #000000 5%, #333338 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#333338',GradientType=0);
+	background-color:#000000;
+	font-size: 20px;
+
+}
+
+input:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #333338), color-stop(1, #000000));
+	background:-moz-linear-gradient(top, #333338 5%, #000000 100%);
+	background:-webkit-linear-gradient(top, #333338 5%, #000000 100%);
+	background:-o-linear-gradient(top, #333338 5%, #000000 100%);
+	background:-ms-linear-gradient(top, #333338 5%, #000000 100%);
+	background:linear-gradient(to bottom, #333338 5%, #000000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#333338', endColorstr='#000000',GradientType=0);
+	background-color:#333338;
+}
+
+
+input::placeholder{
+	color:white;
+	opacity:1;
+}
+
+.reg{
+	text-align: center;
+	font-size: 15px;
+	margin: 2px 2px	2px 2px;
+	color: grey;
+	text-decoration: none;
+}
+
+.reg:hover{
+	text-decoration: underline;
+}
+
+.for{
+	text-align: center;
+	font-size: 15px;
+	color: grey;
+	text-decoration: none;
+}
+
+.join{
+	text-align: center;
+	font-size: 15px;
+	margin: 2px 2px	2px 2px;
+	color: black;
+	text-decoration: none;
+}
+
+.nav {
+    position: sticky;
+		top:-1px;
+    left: 0px;
+    height: 40px;
+    background-color:rgba(0,0,0,0.8);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+     margin: 0;
+     padding: 0;
+}
+
+li a{
+  color: white;
+  text-decoration: none;
+   display: block;
+   text-align: center;
+   margin: 10px 30px 10px 30px;
+  }
+
+  li a:hover, .dropdown:hover .dropbtn {
+      color: #C0C0C0;
+  }
+
+	.dropdown {
+			float: left;
+			overflow: hidden;
+	}
+
+	.dropdown .dropbtn {
+		font-size: 16px;
+		border: none;
+		outline: none;
+		color: white;
+		padding: 10px 14px 12px 14px;
+		background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+
+	.dropdown-content a {
+		float: none;
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+
+	.dropdown-content a:hover {
+		background-color: #ddd;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+  .active {
+      color: silver;
+  }
+
+.headline {
+		text-align: center;
+    font-size: 50px;
+    line-height: 1.10227;
+    font-weight: 500;
+    letter-spacing: -.025em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+		margin: 80px 50px 80px 50px;
+}
+
+</style>
+</head>
+<body>
+	<div>
+		<ul class="nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="brandinfo.html">Brand</a></li>
+			<li><a href="influencerinfo.html">Influencer</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a class="active" href="signin_influencer.html">Log in</a></li>
+
+			<div class="dropdown">
+			<button class="dropbtn">Register
+			</button>
+			<div class="dropdown-content">
+				<a href="reg_brand.html">Brand</a>
+				<a href="reg_influence.html">Influencer</a>
+			</div>
+		</div>
+
+
+		</ul>
+		</div>
+
+	<div class="headline">
+		BRAND
+	</div>
+
+	<div class="b">
+		<form action="signinbrand.php" method="post">
+		<input type="text" placeholder="Brand Name" required name="yname"><br>
+		<input type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase, one lowercase letter, and should be of at least 8 characters" required name="pass"><br>
+		<input type="number" placeholder="Current Instagram Followers" required name="insta"><br>
+		<input type="number" placeholder="Current Youtube Followers" required name="youtube"><br>
+		<input type="submit" class="myButton" value="Log in"><br>
+		<a href="index.html" class="for">Forgot Password?</a>
+		<br><br><br>
+		<span class="join">Don't have an account?<br>Sign up as an </span><a href="reg_influence.html" class="reg">Influencer</a>
+		<span class="join">or as a</span> <a href="reg_brand.html" class="reg"> Brand </a><br><br>
+
+		</form>
+	</div>
+
+</body>
+</html>

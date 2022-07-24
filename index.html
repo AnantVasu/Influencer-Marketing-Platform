@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Influence</title>
+  <style>
+  body {
+    margin: 0;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  }
+
+
+  ul.nav {
+      position: sticky;
+      top:-1px;
+      left: 0px;
+      height: 40px;
+      background-color:rgba(0,0,0,0.8);
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+
+li a{
+  color: white;
+  text-decoration: none;
+   display: block;
+   text-align: center;
+   margin: 10px 30px 10px 30px;
+  }
+
+  li a:hover, .dropdown:hover .dropbtn {
+      color: #C0C0C0;
+
+  }
+
+  .active {
+      color: silver;
+  }
+
+
+  .dropdown {
+      float: left;
+      overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 14px 12px 14px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul.dir{
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+a.d{
+  color: #333;
+  text-decoration: none;x
+}
+
+.myButton {
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #333338));
+background:-moz-linear-gradient(top, #000000 5%, #333338 100%);
+background:-webkit-linear-gradient(top, #000000 5%, #333338 100%);
+background:-o-linear-gradient(top, #000000 5%, #333338 100%);
+background:-ms-linear-gradient(top, #000000 5%, #333338 100%);
+background:linear-gradient(to bottom, #000000 5%, #333338 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#333338',GradientType=0);
+background-color:#000000;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+border-radius:4px;
+border:2px solid #292c2e;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+font-size:27px;
+padding:6px 29px;
+text-decoration:none;
+width: 160px;
+height: 35px;
+text-align: center;
+margin: 290px 100px 290px 100px;
+}
+.myButton:hover {
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #333338), color-stop(1, #000000));
+background:-moz-linear-gradient(top, #333338 5%, #000000 100%);
+background:-webkit-linear-gradient(top, #333338 5%, #000000 100%);
+background:-o-linear-gradient(top, #333338 5%, #000000 100%);
+background:-ms-linear-gradient(top, #333338 5%, #000000 100%);
+background:linear-gradient(to bottom, #333338 5%, #000000 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#333338', endColorstr='#000000',GradientType=0);
+background-color:#333338;
+}
+.myButton:active {
+position:relative;
+top:1px;
+}
+
+.button{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+div.button{
+background-color: #f9f9f9;
+margin-top: 0;
+margin-bottom: 0;
+text-align: center;
+padding-top: 72px;
+padding-bottom: 64px;
+}
+
+div.usp,div.directory{
+background: #fafafa;
+margin-top: 50px;
+margin-bottom: 0;
+text-align: center;
+padding-top: 72px;
+padding-bottom: 64px;
+}
+div.footer{
+  background: #fafafa;
+  margin-bottom: 2px;
+}
+
+.headline {
+    font-size: 50px;
+    line-height: 1.10227;
+    font-weight: 500;
+    letter-spacing: -.025em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.subheadline{
+  font-size: 21px;
+  line-height: 1.38105;
+  font-weight: 400;
+  letter-spacing: .011em;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+a.footer-legal{
+    border-right: 1px solid #d6d6d6;
+    margin-right: 7px;
+    padding-right: 10px;
+    font-size: 15px;
+    display: inline-block;
+    margin-top: 5px;
+    white-space: nowrap;
+    color: #333;
+    text-decoration: none;
+    float: center;
+    font-weight:150;
+
+}
+a.footer-legal:hover { text-decoration: underline;
+          }
+
+span.footer-copyright{
+    margin-right: 250px;
+    float: left;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight:150;
+}
+div.directory{
+    border-bottom: 1px solid #d6d6d6;
+    color: #888;
+    padding: 17px 0 11px;
+}
+
+#block1, #block2
+{
+    display:inline-block;
+    margin: 0px 50px 0px 50px;
+}
+
+section{
+      position: relative;
+}
+
+  </style>
+</head>
+<body>
+
+  <div>
+    <ul class="nav">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="brandinfo.html">Brand</a></li>
+      <li><a href="influencerinfo.html">Influencer</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+      <div class="dropdown">
+      <button class="dropbtn">Log In
+      </button>
+      <div class="dropdown-content">
+        <a href="signin_influencer.html">As an INFLUENCER</a>
+        <a href="signin_brand.html">As a BRAND</a>
+      </div>
+    </div>
+
+      <div class="dropdown">
+      <button class="dropbtn">Register
+      </button>
+      <div class="dropdown-content">
+        <a href="reg_brand.html">Brand</a>
+        <a href="reg_influencer.html">Influencer</a>
+      </div>
+    </div>
+    </ul>
+    </div>
+
+
+  <div class = "button">
+      <a href="brandinfo.html" class="myButton">BRAND</a>
+      <a href="influencerinfo.html" class="myButton">INFLUENCER</a>
+    </div>
+
+<div class="usp">
+  <h2 class="headline">INFLUENCERX<h2>
+    <h3 class="subheadline">
+      The society today demands for Amazing content creators ceaselessly.<br>
+      Creative and relevant content generators are constantly looked up to. <br>
+      InfluenceX offers a platform for verified influencers and renowned brands to join<br>
+      hands and generate remarkable content. We aspire to bridge the gap between<br>
+      brands and bloggers by conducting campaigns and events across the country.<br>
+    </h3>
+</div>
+
+
+<div class="directory">
+<div id="block1">
+  <ul class="dir">
+    <li><a class="d" href="">Privacy Policy</a></li>
+    <li><a class="d" href="">Privacy Policy</a></li>
+    <li><a class="d" href="">Privacy Policy</a></li>
+    <li><a class="d" href="">Privacy Policy</a></li>
+</div>
+
+<div id="block2">
+  <ul class="dir">
+    <li><a class="d" href="">Privacy Policy</a></li>
+    <li><a class="d" href="">Privacy Policy</a></li>
+    <li><a class="d" href="">Privacy Policy</a></li>
+    <li><a class="d" href="">Privacy Policy</a></li>
+</div>
+
+</div>
+
+  <div class="footer">
+    <span class="footer-copyright">Copyright ©
+      2018 PV Inc. All rights reserved. </span>
+			<a class="footer-legal" href="">Privacy Policy</a>
+			<a class="footer-legal" href="">Terms of Use</a>
+			<a class="footer-legal" href="">Legal</a>
+			<a class="footer-legal" href="">Site Map</a>
+		</div>
+
+
+</body>
+</html>

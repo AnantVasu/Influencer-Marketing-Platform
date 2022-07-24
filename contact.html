@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Contact Us</title>
+
+	<style>
+
+	body {
+		margin: 0;
+		font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
+
+	.nav {
+	    position: sticky;
+			  top:-1px;
+	    left: 0px;
+	    height: 40px;
+	    background-color:rgba(0,0,0,0.8);
+	    width: 100%;
+	    display: flex;
+	    justify-content: center;
+	    list-style-type: none;
+	     margin: 0;
+	     padding: 0;
+	}
+
+	li a{
+	  color: white;
+	  text-decoration: none;
+	   display: block;
+	   text-align: center;
+	   margin: 10px 30px 10px 30px;
+	  }
+
+	  li a:hover, .dropdown:hover .dropbtn {
+	      color: #C0C0C0;
+	  }
+
+		.dropdown {
+				float: left;
+				overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: white;
+			padding: 10px 14px 12px 14px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #ddd;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+	  .active {
+	      color: silver;
+	  }
+
+
+.freecontactform {
+margin: 20px 500px 0px 500px;
+width: 460px;
+font-family: arial;
+border: 1px solid #AAA;
+padding:10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+}
+.freecontactformheader {
+font-size:18px;
+font-weight:bold;
+padding-top:10px;
+padding-bottom:10px;
+text-align:center;
+}
+.freecontactformmessage {
+text-align:center;
+padding-bottom:10px;
+}
+.freecontactform td {
+padding:4px;
+font-size:12px;
+}
+.freecontactform p {
+padding:4px;
+}
+.freecontactform label {
+padding:4px;
+}
+.freecontactform label {
+padding-right:10px
+}
+.required {
+font-weight:bold;
+}
+.required_star {
+font-weight:bold;
+color:#F00;
+}
+.not-required {
+font-weight:normal
+}
+.antispammessage {
+padding:10px;
+border-top:1px solid #AAA;
+border-bottom:1px solid #AAA;
+font-weight:bold
+}
+.antispamquestion {
+font-weight:normal;
+}
+
+*/
+	</style>
+
+
+
+
+	</head>
+
+
+
+
+	<body>
+
+		<div>
+			<ul class="nav">
+		    <li><a href="index.html">Home</a></li>
+		    <li><a href="about.html">About</a></li>
+		    <li><a href="brandinfo.html">Brand</a></li>
+		    <li><a href="influencerinfo.html">Influencer</a></li>
+		    <li><a class="active" href="contact.html">Contact</a></li>
+		    <li><a href="signin_influencer.html">Log in</a></li>
+
+		    <div class="dropdown">
+		    <button class="dropbtn">Register
+		    </button>
+		    <div class="dropdown-content">
+		      <a href="reg_brand.html">Brand</a>
+		      <a href="reg_influencer.html">Influencer</a>
+		    </div>
+		  </div>
+
+
+		  </ul>
+			</div>
+
+	<form name="freecontactform" method="post"  onsubmit="return validate.check(this)">
+	<table width="400px" class="freecontactform">
+	<tr>
+	 <td colspan="2">
+	 <div class="freecontactformheader">Contact Us Form</div>
+	 <div class="freecontactformmessage">Fields marked with <span class="required_star"> * </span> are mandatory.</div>
+	 </td>
+	</tr>
+	<tr>
+	 <td valign="top">
+	  <label for="Full_Name" class="required">Full Name<span class="required_star"> * </span></label>
+	 </td>
+	 <td valign="top">
+	  <input type="text" name="Full_Name" id="Full_Name" maxlength="80" style="width:230px">
+	 </td>
+	</tr>
+	<tr>
+	 <td valign="top">
+	  <label for="Email_Address" class="required">Email Address<span class="required_star"> * </span></label>
+	 </td>
+	 <td valign="top">
+	  <input type="text" name="Email_Address" id="Email_Address" maxlength="100" style="width:230px">
+	 </td>
+	</tr>
+	<tr>
+	 <td valign="top">
+	  <label for="Telephone_Number" class="not-required">Telephone Number</label>
+	 </td>
+	 <td valign="top">
+	  <input type="text" name="Telephone_Number" id="Telephone_Number" maxlength="100" style="width:230px">
+	 </td>
+	</tr>
+	<tr>
+	 <td valign="top">
+	  <label for="Your_Message" class="required">Your Message<span class="required_star"> * </span></label>
+	 </td>
+	 <td valign="top">
+	  <textarea style="width:230px;height:160px" name="Your_Message" id="Your_Message" maxlength="2000"></textarea>
+	 </td>
+	</tr>
+	<tr>
+	 <td colspan="2" style="text-align:center" >
+	  <div class="antispammessage">
+	  To help prevent automated spam, please answer this question
+	  <br /><br />
+		  <div class="antispamquestion">
+		   <span class="required_star"> * </span>
+		   Using only numbers, what is 10 plus 15? &nbsp;
+		   <input type="text" name="AntiSpam" id="AntiSpam" maxlength="100" style="width:30px">
+		  </div>
+	  </div>
+	 </td>
+	</tr>
+	<tr>
+	 <td colspan="2" style="text-align:center" >
+	 <br /><br />
+	  <input type="submit" value=" Submit Form " style="width:200px;height:40px">
+	  <br /><br />
+	  <br /><br />
+	 </td>
+	</tr>
+	</table>
+	</form>
+</body>
+</html>
